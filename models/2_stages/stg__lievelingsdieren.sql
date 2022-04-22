@@ -1,2 +1,2 @@
 select mail, upper(lievelingsdier) as lievelingsdier
-from {{ source('raw', 'lievelingsdieren')}}
+from {{ source('raw', 'lievelingsdieren') }}
