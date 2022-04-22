@@ -13,4 +13,4 @@ models:
         description: favoriete dier van de deelnemer
         tests:
           - accepted_values:
-              values: ['ROOD', 'GROEN']
+              values: ['HOND', 'KAT']
