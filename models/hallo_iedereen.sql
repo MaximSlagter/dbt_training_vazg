@@ -1,0 +1,1 @@
+select 'hallo wereld' kolom
