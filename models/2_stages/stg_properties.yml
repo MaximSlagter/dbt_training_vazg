@@ -7,7 +7,9 @@ models:
       - name: mail
         description: Mailadres van de deelnemer
         tests: 
-          - unique
+          - unique:
+              config:
+                severity: error
           - not_null
       - name: lievelingsdier
         description: favoriete dier van de deelnemer
