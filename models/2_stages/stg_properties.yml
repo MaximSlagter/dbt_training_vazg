@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg__lievelingsdieren
+    description: Favoriete dier per deelnemer van de VAZG training
+    columns:
+      - name: mail
+        description: Mailadres van de deelnemer
+        tests: 
+          - unique:
+              config:
+                severity: error
+          - not_null
+      - name: lievelingsdier
+        description: favoriete dier van de deelnemer
+        tests:
+          - accepted_values:
+              values: ['HOND', 'KAT']

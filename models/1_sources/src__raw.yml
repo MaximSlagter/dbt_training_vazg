@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw
+    database: DEMO_DATABASE
+    tables:
+      - name: lievelingsdieren
+      - name: lievelingskleuren
