@@ -1,1 +1,0 @@
-select 'hallo wereld' kolom
