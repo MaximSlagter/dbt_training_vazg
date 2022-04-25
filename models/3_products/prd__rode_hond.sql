@@ -4,7 +4,7 @@
     )
 }}
 
-select lievelingsdier, lievelingskleur
+select lievelingsdier, lievelingskleur, count(*) as aantal
 from {{ ref('stg__voorkeuren') }}
-where lievelingsdier = 'HOND'
-and lievelingskleur = 'ROOD'
+group by lievelingsdier, lievelingskleur
+order by aantal desc
